@@ -136,7 +136,7 @@ ul li a:hover {
   color: var(--cyan);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 984px) {
 
   .container {
     flex-direction: row;

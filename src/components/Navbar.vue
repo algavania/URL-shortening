@@ -53,6 +53,21 @@ export default {
         card.style.display = "block";
       } else card.style.display = "none";
     },
+    resizeWindow() {
+      var card = document.getElementById("nav-card");
+      var windowSize = window.matchMedia("(min-width: 984px)");
+      if (windowSize.matches) {
+        card.style.display = 'block';
+      } else {
+        card.style.display = 'none';
+      }
+    },
+  },
+  created() {
+    window.addEventListener("resize", this.resizeWindow);
+  },
+  destroyed() {
+    window.removeEventListener("resize", this.resizeWindow);
   },
 };
 </script>
@@ -113,7 +128,7 @@ hr {
   background-color: var(--cyan-hover);
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 984px) {
   nav {
     display: flex;
     align-content: center;
@@ -151,6 +166,10 @@ hr {
   .nav-section ul li {
     display: inline-block;
     margin-left: 2.5rem;
+  }
+
+  .nav-login ul {
+    margin-top: 0.3rem;
   }
 
   ul li a {

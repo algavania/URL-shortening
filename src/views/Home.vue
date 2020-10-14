@@ -404,7 +404,7 @@ header .container:nth-child(2) {
   font-size: 18px;
 }
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 984px) {
   header {
     margin-bottom: 5rem;
     display: flex;
