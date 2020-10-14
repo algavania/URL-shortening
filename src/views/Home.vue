@@ -49,7 +49,7 @@
         </div>
         <div class="main-section">
           <h2>Advanced Statistics</h2>
-          <p>
+          <p id="main-desc-text">
             Track how your links are performing across the web with our advanced
             statistics dashboard.
           </p>
@@ -414,6 +414,12 @@ header .container:nth-child(2) {
     align-items: center;
     margin: auto;
     width: 80%;
+  }
+
+  #main-desc-text {
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   header .container {
